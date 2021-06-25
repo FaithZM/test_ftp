@@ -1,0 +1,21 @@
+{
+	"port":5001, //端口号
+	// "rootDir":"."//当前根目录，点 意味着跟ev_ftp_server处于相同目录
+	"rootDir":"/home/hzm/Desktop/ftp_root", //设置根目录(这个目录默认是匿名用户的根目录)
+
+	"allow_anonymous":false, //是否允许匿名登陆
+	"log_dir":"./log/Test.log", //日志信息存放
+	//注册账户
+	"users":[
+		{
+			"name":"abc",
+			"password":"123456",
+			"rootDir":"/home/hzm/Desktop/ftp_root" 
+		},
+		{
+			"name":"ttt",
+			"password":"123",
+			"rootDir":"/home/hzm/Desktop"
+		}
+	]
+}
